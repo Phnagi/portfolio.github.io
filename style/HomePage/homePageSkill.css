@@ -1,0 +1,475 @@
+.HomePageSkill {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10dvh;
+}
+.HomePageSkill .HomePageSkillTitle {
+  overflow: hidden;
+  width: 86%;
+  display: flex;
+  align-items: flex-end;
+  height: 15dvh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Serif TC";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 24.84px;
+}
+.HomePageSkill .skillBox {
+  position: relative;
+  width: 86%;
+  height: 30dvh;
+  display: flex;
+  margin: 2% 0 2% 0;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .skillBox {
+    flex-direction: column;
+    width: 86%;
+    height: 55dvh;
+  }
+}
+.HomePageSkill .skillBox .skillTitle {
+  width: 60%;
+  height: 100%;
+  /* background-color: rgb(186, 135, 69); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .skillBox .skillTitle {
+    justify-content: center;
+    align-items: flex-start;
+    /* width: 100%; */
+  }
+}
+.HomePageSkill .skillBox .skillTitle p {
+  margin: 0;
+  color: #000;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .HomePageSkill .skillBox .skillTitle p {
+    font-size: 12px;
+  }
+}
+.HomePageSkill .skillBox .codingSkillBox {
+  width: 20%;
+  height: 100%;
+  /* background-color: aqua; */
+  margin-right: 0%;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .skillBox .codingSkillBox {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .HomePageSkill .skillBox .codingSkillBox {
+    width: 42%;
+  }
+}
+@media (max-width: 576px) {
+  .HomePageSkill .skillBox .codingSkillBox {
+    width: 100%;
+  }
+}
+.HomePageSkill .skillBox .codingSkillBox .codingSkillTitle {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .skillBox .codingSkillBox .codingSkillTitle {
+    height: 45%;
+    justify-content: flex-start;
+  }
+}
+.HomePageSkill .skillBox .codingSkillBox .codingSkillTitle p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .skillBox .codingSkillBox .codingSkillTitle p {
+    font-size: 14px;
+  }
+}
+.HomePageSkill .skillBox .codingSkillBox .codingSkillContent {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: antiquewhite; */
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .skillBox .codingSkillBox .codingSkillContent {
+    height: 55%;
+  }
+}
+.HomePageSkill .skillBox .codingSkillBox .codingSkillContent p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .skillBox .codingSkillBox .codingSkillContent p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .HomePageSkill .skillBox .codingSkillBox .codingSkillContent p {
+    font-size: 10px;
+  }
+}
+.HomePageSkill .skillBox .softSkillBox {
+  width: 20%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .skillBox .softSkillBox {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .HomePageSkill .skillBox .softSkillBox {
+    width: 42%;
+  }
+}
+@media (max-width: 575px) {
+  .HomePageSkill .skillBox .softSkillBox {
+    width: 60%;
+  }
+}
+.HomePageSkill .skillBox .softSkillBox .softSkillTitle {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .skillBox .softSkillBox .softSkillTitle {
+    height: 45%;
+    justify-content: flex-start;
+  }
+}
+.HomePageSkill .skillBox .softSkillBox .softSkillTitle p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .skillBox .softSkillBox .softSkillTitle p {
+    font-size: 14px;
+  }
+}
+.HomePageSkill .skillBox .softSkillBox .softSkillContent {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: antiquewhite; */
+  margin: 0;
+  padding: 0;
+}
+.HomePageSkill .skillBox .softSkillBox .softSkillContent p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .skillBox .softSkillBox .softSkillContent p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .HomePageSkill .skillBox .softSkillBox .softSkillContent p {
+    font-size: 10px;
+  }
+}
+.HomePageSkill .EducationBox {
+  position: relative;
+  width: 86%;
+  height: 30dvh;
+  display: flex;
+  margin: 2% 0 2% 0;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .EducationBox {
+    flex-direction: column;
+    width: 86%;
+    height: 55dvh;
+  }
+}
+.HomePageSkill .EducationBox .EducationTitle {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .EducationBox .EducationTitle {
+    justify-content: center;
+    align-items: flex-start;
+    /* width: 100%; */
+  }
+}
+.HomePageSkill .EducationBox .EducationTitle p {
+  margin: 0;
+  color: #000;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .HomePageSkill .EducationBox .EducationTitle p {
+    font-size: 12px;
+  }
+}
+.HomePageSkill .EducationBox .heightSchooldegreeBox {
+  width: 20%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .EducationBox .heightSchooldegreeBox {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .HomePageSkill .EducationBox .heightSchooldegreeBox {
+    width: 42%;
+  }
+}
+@media (max-width: 576px) {
+  .HomePageSkill .EducationBox .heightSchooldegreeBox {
+    width: 100%;
+    height: 60%;
+  }
+}
+.HomePageSkill .EducationBox .heightSchooldegreeBox .heightSchooldegreeTitle {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .EducationBox .heightSchooldegreeBox .heightSchooldegreeTitle {
+    height: 45%;
+    justify-content: flex-start;
+  }
+}
+.HomePageSkill .EducationBox .heightSchooldegreeBox .heightSchooldegreeTitle p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .EducationBox .heightSchooldegreeBox .heightSchooldegreeTitle p {
+    font-size: 14px;
+  }
+}
+.HomePageSkill .EducationBox .heightSchooldegreeBox .heightSchooldegreeContent {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: antiquewhite; */
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .EducationBox .heightSchooldegreeBox .heightSchooldegreeContent {
+    height: 55%;
+  }
+}
+.HomePageSkill .EducationBox .heightSchooldegreeBox .heightSchooldegreeContent p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .EducationBox .heightSchooldegreeBox .heightSchooldegreeContent p {
+    font-size: 12px;
+  }
+}
+.HomePageSkill .EducationBox .universitydegreeBox {
+  width: 20%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .EducationBox .universitydegreeBox {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .HomePageSkill .EducationBox .universitydegreeBox {
+    width: 42%;
+  }
+}
+@media (max-width: 575px) {
+  .HomePageSkill .EducationBox .universitydegreeBox {
+    width: 60%;
+  }
+}
+@media (max-width: 576px) {
+  .HomePageSkill .EducationBox .universitydegreeBox {
+    margin-top: 20%;
+    width: 60%;
+    height: 60%;
+  }
+}
+.HomePageSkill .EducationBox .universitydegreeBox .universitydegreeTitle {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .HomePageSkill .EducationBox .universitydegreeBox .universitydegreeTitle {
+    height: 45%;
+    justify-content: flex-start;
+  }
+}
+.HomePageSkill .EducationBox .universitydegreeBox .universitydegreeTitle p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .EducationBox .universitydegreeBox .universitydegreeTitle p {
+    font-size: 14px;
+  }
+}
+.HomePageSkill .EducationBox .universitydegreeBox .universitydegreeContent {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: antiquewhite; */
+  margin: 0;
+  padding: 0;
+}
+.HomePageSkill .EducationBox .universitydegreeBox .universitydegreeContent p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%; /* 29.583px */
+  letter-spacing: 1px;
+}
+@media (max-width: 992px) {
+  .HomePageSkill .EducationBox .universitydegreeBox .universitydegreeContent p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=homePageSkill.css.map */
