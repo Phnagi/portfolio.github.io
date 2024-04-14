@@ -1,0 +1,32 @@
+#homePageWorks{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    #homePageWorksBigTitle{
+        /* background-color: yellow; */
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+
+        align-items: flex-start;
+        height: 15dvh;
+        position: relative;
+        left: 7%;
+        padding: 0;
+        margin: 0;
+        font-family: "Noto Serif TC";
+        font-size: 30px;
+        font-style: normal;
+        font-weight:500;
+
+        letter-spacing: 24.84px;
+
+        @media(max-width: 768px){
+            align-items: center;
+        }
+
+    }
+
+
+ }

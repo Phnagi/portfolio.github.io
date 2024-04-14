@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nagi</title>
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/HomePage/landinPage.css">
+    <link rel="stylesheet" href="style/AboutPage/about.css">
+    <link rel="stylesheet" href="style/HomePage/homePageWorks.css">
+    <link rel="stylesheet" href="style/HomePage/mainWorks.css">
+    <link rel="stylesheet" href="style/HomePage/secWorks.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check" >
+        <label  id="hamBox" for="check" onclick="handleF()">
+
+            <div id="hamberger1"></div>
+            <div id="hamberger2"></div>
+        </label >
+    </header>
+    <div  class="headerPage">
+        <div class="headerContentBox">
+          
+          <a href="#" >首頁</a>
+          <a href="#" >Home</a>
+        </div>
+        <div class="headerContentBox">
+          
+            <a  href="#">關於</a>
+            <a  href="#">ABout</a>
+        </div>
+        <div class="headerContentBox">
+            <a  href="#" >作品</a>
+            <a  href="#" >Works</a>
+        </div>
+        <div class="headerContentBox">
+            <a href="#">聯絡</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="headerContentBox2">
+            <a href="#">IG</a>
+            <a href="#">Behance</a>
+        </div>
+    </div>
+
+    <div class="lendingPage" >
+        <img  class="scrollBox landingPageSpeed" src="assets/me_1.jpg" alt="" id="imgBox"   data-speed="3">
+        <div id="textBox" class="scrollBox"  >
+            <div id="textBoxTitle" class=" landingPageSpeed" data-speed="20">
+              <h3>CHUN-CHIEH</h3>
+              <h3>Liang</h3>
+            </div>
+            <div id="textBoxContent"  class=" landingPageSpeed" data-speed="10" >
+              <h5>UX/UI</h5>
+              <h5>Font-End Developer</h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="homePageAbout" >
+        <p id="homePageTittle" >關於</p>
+        <p id="homePageContent">
+            一名喜歡設計、網頁開發以及攝影的大學生，喜歡創建優雅、用戶友好且具有創造性的產品。
+            我對於創意和技術的結合充滿著熱情，對於使用者設計等領域的熱忱也驅使我不斷學習和探索新的技術和設計趨勢，
+            在網頁開發上也不斷精進自己，在團隊合作上，由於會設計及寫程式，可以很好理解設計時與技術上的問題，
+            我相信，通過將技術與設計融合在一起，可以創造出令人更加便利的用戶體驗，這正是我每天努力的目標。
+        </p>
+    </div>
+    <div id="homePageWorks">
+        <p id="homePageWorksBigTitle">作品</p>
+
+        <div class="MainworkTwoBox">
+            <div class="MainWork">
+                <a href="#" class="MainWorkVideoBox">
+                    <p class="MainWorkVideoMore">more</p>
+                    <video src="assets/video/goAhand_1.mp4" autoplay muted loop></video>
+                </a>
+        
+                <a  class="MainWorkContent">
+                    <div class="MainworkTitleBox">
+                        <p class="MainworkTitleMain">GoAhand</p>
+                        <p class="MainworkTitleSub">UI/UX video</p>
+                    </div>
+                    <div class="MainworkConceptBox">
+                        <p class="MainworkConcept">簡介</p>
+                        <p class="MainworkConceptContent">
+                            一個不論是身心障礙者或是普通人都可以拿來規劃無障礙旅行計畫及日常使用的一個app，
+                            可以根據你選擇的地點給予使用者無障礙路線導航與盲人輔助導航的需求。
+        
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <div class="sec">
+            <div class="secWork" id="secWork1" >
+                <a href="#" class="secWorkVideoBox secWorkSpeed1" data-speed="1.5">
+                    <img src="assets/images/VI/HomeTrust/VI.jpg" alt="">
+                </a>
+                <a href="#" class="secWorkContentBox secWorkSpeed1" data-speed="1.5">
+                    <p class="secWorkSubTitle">VI</p>
+                    <p class="secWorkTitle">HomeTrust</p>
+    
+                    <div class="secWorkMore">更多</div>
+    
+    
+                </a>
+            </div>
+        </div>
+
+        <div class="sec">
+            <div class="secWork" id="secWork2" >
+                <a href="#" class="secWorkVideoBox secWorkSpeed2" data-speed="1.5">
+                    <img src="assets/images/VI/Drop/Drop16.jpg" alt="">
+                </a>
+                <a href="#" class="secWorkContentBox secWorkSpeed2" data-speed="1.5">
+                    <p class="secWorkSubTitle">Design</p>
+                    <!-- <p class="secWorkTitle" style="font-family: Noto Serif TC">楓茶米</p> -->
+                    <p class="secWorkTitle" >DropCoffe</p>
+                    <div class="secWorkMore">更多</div>
+
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+    <script src="js/init.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/HomePage/landingPage.js"></script>
+    <script src="js/AboutPage/about.js"></script>
+    <script src="js/HomePage/mainWorks.js"></script>
+    <script src="js/HomePage/secWorks.js"></script>
+</body>
+</html>
