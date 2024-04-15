@@ -1,0 +1,219 @@
+.workschildTextFlexBox {
+  position: relative;
+  width: 100%;
+  height: 50dvh;
+  display: flex;
+  justify-content: center;
+
+  margin: 7% 0% 2% 0%;
+  @media (max-width: 768px) {
+    margin: 0% 0% 2% 0%;
+    height: 100dvh;
+  }
+  .workschildTextBox {
+    width: 800px; /* */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: flex-start;
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .worksChildTitleBox {
+      position: relative;
+      width: 30%;
+      height: 100%;
+      display: flex;
+      order: 1;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin: -20px 10% 0% 0%;
+
+      /* background: aqua; */
+      @media (max-width: 768px) {
+        width: 80%;
+        height: 40%;
+        order: 0;
+        margin: 0px 0% 0% 0%;
+      }
+      .worksChildTitleEnBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        @media (max-width: 768px) {
+          align-items: flex-end;
+          justify-content: center;
+        }
+        .workschildTitle {
+          padding: 0;
+          margin: 0;
+
+          color: #000;
+          font-family: "Noto Sans TC";
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 147.917%; /* 47.333px */
+          letter-spacing: 1.6px;
+        }
+        .workschildSubTitle {
+          padding: 0;
+          margin: 0;
+          color: #000;
+
+          font-family: "Noto Sans TC";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 147.917%; /* 29.583px */
+          letter-spacing: 1px;
+        }
+      }
+      .worksChildTitleChiBox {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+        @media (max-width: 768px) {
+          align-items: flex-start;
+          justify-content: center;
+          margin-top: 20dvh;
+        }
+        .workschildTitleChi {
+          padding: 0;
+          margin: 20px 0px 0px 0px;
+          color: #000;
+
+          font-family: "Noto Serif TC";
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 190%; /* 68.4px */
+          letter-spacing: 2rem;
+          writing-mode: vertical-rl;
+          @media (max-width: 768px) {
+            margin: 0px 0px 0px 0px;
+          }
+        }
+
+        .workschildSubTitleChi {
+          position: relative;
+          padding: 0;
+          margin: 0;
+          color: #000;
+          margin-top: 21px;
+          margin-left: 0px;
+          font-family: "Noto Serif TC";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 147.917%; /* 29.583px */
+          letter-spacing: 8px;
+          writing-mode: vertical-rl;
+          @media (max-width: 768px) {
+            font-size: 12px;
+            letter-spacing: 5px;
+            margin-top: 20px;
+            margin-left: 0px;
+            left: 10px;
+          }
+        }
+      }
+      .worksChildptototype {
+        position: relative;
+        text-decoration: none;
+        color: #a9a9a9;
+
+        font-family: "Noto Sans TC";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 147.917%; /* 29.583px */
+        letter-spacing: 1px;
+        z-index: 5;
+        transition: 0.5s ease-in-out;
+        &::before {
+          position: absolute;
+          content: "";
+          height: 15px;
+          width: 2px;
+          background-color: #000;
+          bottom: -1px;
+          right: -5px;
+          transition: 0.5s ease-in-out;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 50px;
+          background-color: #000;
+          bottom: -5px;
+          right: 0px;
+          transition: 0.5s ease-in-out;
+        }
+        &:hover {
+          color: #000;
+        }
+        // &:hover&::before {
+        //   bottom: -10px;
+        // }
+        // &:hover&::after {
+        //   right: -10px;
+        // }
+      }
+
+      .worksChildptototype:hover.worksChildptototype::before {
+        bottom: -10px;
+      }
+      .worksChildptototype:hover.worksChildptototype::after {
+        right: -10px;
+      }
+    }
+    .worksChildContentText {
+      padding: 0;
+      margin: 0;
+      width: 70%;
+      height: 70%;
+      writing-mode: vertical-rl;
+      display: flex;
+      order: 0;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      margin: 0% 0% 0% 10%;
+
+      color: #000;
+
+      font-family: "Noto Serif TC";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 190%; /* 30.4px */
+      letter-spacing: 0.2rem;
+      @media (max-width: 768px) {
+        width: 60%;
+        height: 70%;
+        justify-content: flex-start;
+        align-items: center;
+        writing-mode: horizontal-tb;
+        justify-content: flex-end;
+        order: 1;
+        font-size: 14px;
+        margin: 0% 0% 0% 0%;
+      }
+    }
+  }
+}

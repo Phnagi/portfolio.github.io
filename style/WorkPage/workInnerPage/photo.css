@@ -1,0 +1,154 @@
+.phselectList_handle {
+  display: flex !important;
+  opacity: 1 !important;
+  transform: scaleY(1) !important;
+}
+
+.photoSelectBox {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin:10% 0% 10% 0% ; */
+  overflow: hidden;
+}
+.photoSelectBox #checkPhoto {
+  opacity: 0;
+}
+.photoSelectBox #checkPhoto:checked + .phselect .phselectList {
+  /* display: flex;
+          opacity: 1;
+          transform: scaleY(1); */
+}
+.photoSelectBox #checkPhoto:checked + .phselect #selectText::before {
+  left: 110px;
+}
+.photoSelectBox #checkPhoto:checked + .phselect #selectText::after {
+  left: 110px;
+}
+.photoSelectBox .phselect {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin: 2% 0% 2% 0%;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px rgb(46, 46, 46) solid;
+  /* padding: 5px 0px 5px 0px; */
+}
+.photoSelectBox .phselect p {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif TC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%; /* 38px */
+  letter-spacing: 15px;
+  padding-left: 15px;
+}
+.photoSelectBox .phselect #selectText {
+  position: relative;
+  top: 0;
+}
+.photoSelectBox .phselect #selectText::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 1.5px;
+  background-color: rgb(46, 46, 46);
+  top: 8px;
+  left: 115.5px;
+  transform: rotate(45deg);
+  transition: 0.5s ease-in-out;
+}
+.photoSelectBox .phselect #selectText::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 1.5px;
+  background-color: rgb(46, 46, 46);
+  top: 8px;
+  left: 104.5px;
+  transform: rotate(-45deg);
+  transition: 0.5s ease-in-out;
+}
+.photoSelectBox .phselect .phselectList {
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 38px;
+  /* height: 200px; */
+  z-index: 2;
+  /* margin:2% 0% 2% 0% ; */
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border: 1px rgb(46, 46, 46) solid;
+  border-top: none;
+  /* padding: 5px 0px 10px 0px; */
+  /* display: none; */
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: 0.5s ease-in-out;
+}
+.photoSelectBox .phselect .phselectList .selectListOne {
+  position: relative;
+}
+.worksChildPhotoBox {
+  /* margin-top: 10%; */
+  position: relative;
+  /* margin-bottom: 10%; */
+  width: 100%;
+  height: auto;
+  /* height: 70dvh; */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  /* @media(max-width: 576px){
+        margin: 0% 0% 0% 0%;
+        justify-content: flex-start; 
+        align-items: flex-start;
+    } */
+}
+@media (max-width: 768px) {
+  .worksChildPhotoBox {
+    margin-top: 0%;
+    margin-bottom: 10%;
+    align-items: flex-start;
+  }
+}
+.worksChildPhotoBox img {
+  display: flex;
+  align-items: flex-start;
+  width: 900px;
+  height: auto;
+  /* object-fit: cover; */
+}
+@media (max-width: 992px) {
+  .worksChildPhotoBox img {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .worksChildPhotoBox img {
+    width: 100%;
+  }
+}
+.worksChildPhotoBox .worksChildPhotoV {
+  width: auto;
+  height: 90dvh;
+}
+
+.worksChildPhotoBox + .worksChildPhotoBox {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}/*# sourceMappingURL=photo.css.map */
