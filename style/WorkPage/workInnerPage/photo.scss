@@ -152,16 +152,88 @@
       width: 80%;
     }
     @media (max-width: 768px) {
-      width: 100%;
+      width: 80%;
     }
   }
   .worksChildPhotoV {
     width: auto;
     height: 90dvh;
+    @media (max-width: 768px) {
+      width: 80%;
+      height: auto;
+    }
   }
 }
 
 .worksChildPhotoBox + .worksChildPhotoBox {
   margin-top: 15%;
   margin-bottom: 15%;
+}
+
+.scrollTopBtn{
+  cursor: pointer;
+  content: '';
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.367);
+  right: 7%;
+  bottom: 5%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in;
+  svg{
+    width: 50%;
+    path{
+      fill: rgba(255, 255, 255, 0.704);
+    }
+  }
+  &:hover{
+    background-color: #f5f5f5;
+    svg{
+      animation:scrollBtnAnimate 1.2s ease-in-out 0s infinite;
+      path{
+        fill: rgba(0, 0, 0, 0.579);
+        
+      }
+    }
+  }
+
+  
+  // &::before{
+  //   position: absolute;
+  //   content: '';
+  //   background-color: rgba(255, 255, 255, 0.492);
+  //   height: 3px;
+  //   width: 25px;
+  //   rotate: -45deg;
+  //   top: 46%;
+  //   left: 24%;
+  //   border-radius: 120px;
+
+  // }
+  // &::after{
+  //   position: absolute;
+  //   content: '';
+  //   background-color:rgba(255, 255, 255, 0.492);
+  //   height: 3px;
+  //   width: 25px;
+  //   rotate: 45deg;
+  //   top: 46%;
+  //   right: 24%;
+  //   border-radius: 120px;
+
+  // }
+
+}
+
+@keyframes scrollBtnAnimate{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-20px);
+  }
 }

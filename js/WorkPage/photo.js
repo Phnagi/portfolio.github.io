@@ -1,3 +1,48 @@
+//footer
+// const footer = document.querySelector("#footer");
+
+// let footerTl = gsap.timeline({
+//     scrollTrigger:{
+//         trigger:footer,
+//         start:'-60% top',
+//         end:'20% 20%',
+//         scrub:true,
+//         // markers:true,
+//     }
+// });
+
+
+// footerTl.fromTo(footer,{
+//     xPercent:60,
+//     opacity:0,
+// },{
+
+//     xPercent:0,
+//     opacity:1,
+// })
+
+
+// function reloadTl(){
+//     footerTl = gsap.timeline({
+//         scrollTrigger:{
+//             trigger:footer,
+//             start:'-60% top',
+//             end:'20% 20%',
+//             scrub:true,
+//             // markers:true,
+//         }
+//     });
+//     footerTl.fromTo(footer,{
+//         xPercent:60,
+//         opacity:0,
+//     },{
+    
+//         xPercent:0,
+//         opacity:1,
+//     })
+// }
+
+//
 let HandlePhotoSelect = false;
 let phselect = document.querySelector(".phselect");
 let selectText = document.querySelector("#selectText");
@@ -91,7 +136,7 @@ let photoList = [
     direction: true,
   },
   {
-    src: "../assets/images/photo/66.jpg",
+    src: "../assets/images/photo/16.jpg",
     name: 16,
     direction: true,
   },
@@ -245,7 +290,7 @@ function switchPhSelectTextFn() {
     footerReload = true;
     photoBox.innerHTML = "";
     randerPhotoList(photoFinalList);
-    // reloadTl();
+    reloadTl();
 
     // console.log(photoFinalList);
   } else if (selectText.textContent == "人像") {
@@ -258,7 +303,7 @@ function switchPhSelectTextFn() {
     footerReload = true;
     photoBox.innerHTML = "";
     randerPhotoList(photoFinalList);
-    // reloadTl();
+    reloadTl();
     // console.log(photoFinalList);
   }
 }
@@ -266,12 +311,38 @@ function switchPhSelectTextFn() {
 let phtoBoxList = null;
 function randerPhotoList(list) {
   list.forEach((child) => {
-    photoBox.innerHTML += `
-        <div  class="worksChildPhotoBox"  >
-            <img class='' src=${child.src} alt="">
-        </div>
-    `;
+
+    if(child.direction){
+      photoBox.innerHTML += `
+      <div  class="worksChildPhotoBox"  >
+          <img class='worksChildPhotoV' src=${child.src} alt="">
+      </div>
+      `;
+    }else{
+      photoBox.innerHTML += `
+      <div  class="worksChildPhotoBox"  >
+          <img class='' src=${child.src} alt="">
+      </div>
+      `;
+    }
+
   });
 }
 photoFinalList = photoList;
 randerPhotoList(photoFinalList);
+
+
+//scrollTop
+
+let scrollTopBtn = document.querySelector(".scrollTopBtn");
+
+scrollTopBtn.addEventListener("click",()=> {
+  // console.log("worksPageindexBoxGoAhand")
+  gsap.to(window,
+      {duration: 0.5, 
+      scrollTo:{y:".photoSelectBox" , 
+      offsetY:-1}
+  
+  });
+})
+

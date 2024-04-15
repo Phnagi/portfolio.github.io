@@ -140,15 +140,61 @@
 }
 @media (max-width: 768px) {
   .worksChildPhotoBox img {
-    width: 100%;
+    width: 80%;
   }
 }
 .worksChildPhotoBox .worksChildPhotoV {
   width: auto;
   height: 90dvh;
 }
+@media (max-width: 768px) {
+  .worksChildPhotoBox .worksChildPhotoV {
+    width: 80%;
+    height: auto;
+  }
+}
 
 .worksChildPhotoBox + .worksChildPhotoBox {
   margin-top: 15%;
   margin-bottom: 15%;
+}
+
+.scrollTopBtn {
+  cursor: pointer;
+  content: "";
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.367);
+  right: 7%;
+  bottom: 5%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in;
+}
+.scrollTopBtn svg {
+  width: 50%;
+}
+.scrollTopBtn svg path {
+  fill: rgba(255, 255, 255, 0.704);
+}
+.scrollTopBtn:hover {
+  background-color: #f5f5f5;
+}
+.scrollTopBtn:hover svg {
+  animation: scrollBtnAnimate 1.2s ease-in-out 0s infinite;
+}
+.scrollTopBtn:hover svg path {
+  fill: rgba(0, 0, 0, 0.579);
+}
+
+@keyframes scrollBtnAnimate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
 }/*# sourceMappingURL=photo.css.map */
