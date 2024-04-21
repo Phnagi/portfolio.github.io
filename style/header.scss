@@ -4,16 +4,18 @@ header{
     position: fixed;
     width: 100%;
     height:40px;
-    z-index: 20;
+    z-index: 50;
     display: flex;
     justify-content: flex-end;
     top: 0;
     left: 0;
+    pointer-events: none;
     input{
         display: none;
         overflow: hidden;
     }
     #hamBox{
+        pointer-events:all;
         position: relative;
         width: 40px;
         height:40px;
@@ -187,4 +189,5 @@ header{
     transition-property:opacity,height;
     transition-delay: 0s,0.1s;
     transition-duration:1s ;
+    // z-index: 100;
 }

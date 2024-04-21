@@ -188,22 +188,22 @@
 @media (max-width: 499px) {
   .worksPageMainBox .worksPageMain .worksImgBox #homeTrustImg {
     /* left: -360px; */
-    left: -85dvw;
+    left: 20dvw;
   }
 }
 @media (max-width: 376px) {
   .worksPageMainBox .worksPageMain .worksImgBox #homeTrustImg {
-    left: -60dvw;
+    left: 20dvw;
   }
 }
 @media (max-width: 360px) {
   .worksPageMainBox .worksPageMain .worksImgBox #homeTrustImg {
-    left: -80dvw;
+    left: 20dvw;
   }
 }
 @media (max-width: 300px) {
   .worksPageMainBox .worksPageMain .worksImgBox #homeTrustImg {
-    left: -250px;
+    left: 50px;
   }
 }
 @media (max-width: 992px) {
@@ -396,7 +396,8 @@
   margin-left: 7dvw;
   margin-top: 2dvh;
   cursor: pointer;
-  z-index: 50;
+  position: relative;
+  z-index: 100;
 }
 .worksPageMainBox .worksPageMain .worksPageTextBox .worksPageindexBox p {
   margin: 0;

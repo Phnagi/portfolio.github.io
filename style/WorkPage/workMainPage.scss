@@ -169,16 +169,17 @@
                 }
                 @media(max-width:499px){
                     /* left: -360px; */
-                    left: -85dvw;
+                    left: 20dvw;
                 }
                 @media(max-width: 376px){
-                    left: -60dvw;
+                    left: 20dvw;
                 }
                 @media(max-width: 360px){
-                    left: -80dvw;
+                    left: 20dvw;
                 }
                 @media(max-width: 300px){
-                    left: -250px;
+                    left: 50px;
+                    // scale: 10%;
                 }
             }
             #DropImg{
@@ -204,6 +205,7 @@
                 }
                 @media(max-width:300px){
                     left: 25%;
+
                 }
 
             }
@@ -334,7 +336,8 @@
                 margin-left: calc(100dvw*0.07);
                 margin-top: 2dvh;
                 cursor: pointer;
-                z-index: 50;
+                position: relative;
+                z-index: 100;
 
                 p{
                     margin: 0;
@@ -349,6 +352,7 @@
                     letter-spacing: 0.75px;
                     transform: translateX(0);
                     transition: 0.5s ease-in-out;
+  
                     
                 }
                 #worksPageindex1{
